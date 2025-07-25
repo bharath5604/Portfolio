@@ -1,11 +1,19 @@
 import React from 'react';
-
-import {  Linkedin, ArrowRight, Sparkles, Github } from 'lucide-react';
+import { Linkedin, ArrowRight, Sparkles, Github, } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation'; // ✅ Added typing animation
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/bhavesh-perumalla-b856972a6/?trk=opento_sprofile_goalscard', color: 'hover:text-blue-600' },
-    { icon: Github, href: 'https://github.com/bharath5604', color: 'hover:text-gray-800' },
+    {
+      icon: Linkedin,
+      href: 'https://www.linkedin.com/in/bhavesh-perumalla-b856972a6/?trk=opento_sprofile_goalscard',
+      color: 'hover:text-blue-600'
+    },
+    {
+      icon: Github,
+      href: 'https://github.com/bharath5604',
+      color: 'hover:text-gray-800'
+    },
   ];
 
   return (
@@ -45,20 +53,25 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
                 Bhavesh Perumalla
               </h1>
+
               <div className="text-xl lg:text-2xl text-gray-300">
                 And I'm a{' '}
-                <span className="text-cyan-400 font-semibold relative inline-block whitespace-nowrap overflow-hidden border-r-2 border-cyan-400 animate-typing-cursor">
-                  <span className="animate-typewriter inline-block">
-                    Full Stack Developer
-                  </span>
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 animate-pulse"></span>
-                </span>
+                <TypeAnimation
+                  sequence={[
+                    'Frontend Developer', 2000,
+                    'Backend Developer', 2000,
+                    'Full Stack Developer', 2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  className="text-cyan-400 font-semibold"
+                  repeat={Infinity}
+                />
               </div>
-
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
-              
+              {/* Add a description if needed */}
             </p>
 
             {/* Social Links */}
@@ -67,6 +80,8 @@ const Hero = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 transition-all duration-300 hover:scale-110 hover:bg-slate-700 ${social.color} hover:shadow-lg`}
                 >
                   <social.icon size={20} />
@@ -77,15 +92,15 @@ const Hero = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact">
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 group">
-                <span>Hire Me</span>
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 group">
+                  <span>Hire Me</span>
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
               </a>
               <a href="#contact">
-              <button className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-                Contact Me
-              </button>
+                <button className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
+                  Contact Me
+                </button>
               </a>
             </div>
           </div>
@@ -97,12 +112,13 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 p-1 animate-spin-slow">
                 <div className="w-full h-full bg-slate-900 rounded-full"></div>
               </div>
-              
+
               {/* Profile Image Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-cyan-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden bg-slate-800">
                   <img
-                   src="/profile.jpg" alt="Bhavesh Perumalla"
+                    src="/profile.jpg"
+                    alt="Bhavesh Perumalla"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -121,3 +137,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
