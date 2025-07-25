@@ -152,3 +152,15 @@ button, a, input, textarea {
   border-right: .15em solid #06b6d4;
   animation: blink-caret .75s step-end infinite;
 }
+
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(22) 1s 1 normal both;
+}

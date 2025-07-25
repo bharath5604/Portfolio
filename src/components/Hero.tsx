@@ -47,11 +47,14 @@ const Hero = () => {
               </h1>
               <div className="text-xl lg:text-2xl text-gray-300">
                 And I'm a{' '}
-                <span className="text-cyan-400 font-semibold relative">
-                  Full Stack Developer
+                <span className="text-cyan-400 font-semibold relative inline-block whitespace-nowrap overflow-hidden border-r-2 border-cyan-400 animate-typing-cursor">
+                  <span className="animate-typewriter inline-block">
+                    Full Stack Developer
+                  </span>
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 animate-pulse"></span>
                 </span>
               </div>
+
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
