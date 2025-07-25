@@ -99,7 +99,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-cyan-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden bg-slate-800">
                   <img
-                   src="assets/profile.jpg" alt="Bhavesh Perumalla"
+                   src="/profile.jpg" alt="Bhavesh Perumalla"
                     className="w-full h-full object-cover"
                   />
                 </div>
