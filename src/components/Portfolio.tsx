@@ -14,7 +14,7 @@ const Portfolio = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
     if (ref.current) {
@@ -126,7 +126,7 @@ const Portfolio = () => {
     "JavaScript"
   ],
   liveUrl: "#",
-  githubUrl: "#"
+  githubUrl: "https://github.com/bharath5604/Furniture-Expenditure-Calculator"
 }
   ];
 
@@ -193,6 +193,7 @@ const Portfolio = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"                   
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
