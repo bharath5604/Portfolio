@@ -29,7 +29,7 @@ const Portfolio = () => {
       id: 1,
       title: 'Car Spare Parts and Service Booking',
       category: 'Web App',
-      image: 'https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'publicspareparts.jpeg',
       description: 'A web application that displays car spare parts from a database. The application features a front end to view products and a back end to manage products and service bookings.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose'],
       liveUrl: '#',
@@ -39,7 +39,7 @@ const Portfolio = () => {
       id: 2,
       title: 'Student Assessment Portal',
       category: 'Web App',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'public/assessment.jpeg',
       description: 'A comprehensive web application for students to take assessment tests based on their chosen engineering branch. Features user authentication, timed quizzes, and college recommendations based on test scores.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'bcrypt', 'JWT', 'Cors'],
       liveUrl: '#',
@@ -53,13 +53,13 @@ const Portfolio = () => {
       description: 'A responsive portfolio website with modern design and animations',
       technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: 'https://github.com/bharath5604/Portfolio'
     },
    {
   id: 4,
   title: "AI-Based Chest X-Ray Diagnosis",
   category: "AI / Web App",
-  image: "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=800",
+  image: "public/chestxray.jpeg",
   description: "A multi-role web application for medical diagnosis. Doctors can sign up, log in, and upload patient chest X-ray images (JPG, PNG, DICOM) to receive an AI-powered diagnosis for conditions like COVID, Pneumonia, and more. The app generates a Grad-CAM heatmap to visualize the model's focus and produces a downloadable PDF report for each patient. It also includes a dashboard for doctors to view their patient analytics. An admin role provides a system-wide dashboard to monitor doctor activity and export consolidated patient data reports in Excel and PDF formats.",
   technologies: [
     "Python",
@@ -80,7 +80,7 @@ const Portfolio = () => {
   id: 5,
   title: "Certificate OCR Extractor",
   category: "Web App",
-  image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800",
+  image: "public/scanner.png",
   description: "A web application that automates the extraction of information from certificate images. Users can upload a certificate, and the backend (built with Node.js) preprocesses the image for clarity using the 'sharp' library. It then employs Tesseract.js for Optical Character Recognition (OCR) to read the text. Finally, it uses regular expressions to parse and extract key details like student name, organization, certificate type, and duration, returning the structured data to the user.",
   technologies: [
     "Node.js",
@@ -126,7 +126,7 @@ const Portfolio = () => {
     "JavaScript"
   ],
   liveUrl: "#",
-  githubUrl: "https://github.com/bharath5604/Furniture-Expenditure-Calculator"
+  githubUrl: "https://github.com/bharath5604/House-Construction-Expenditure-Calculator"
 }
   ];
 

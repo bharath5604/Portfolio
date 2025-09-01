@@ -100,44 +100,44 @@ const Certificates = () => {
     }
   ];
 
-  const achievements = [
-    {
-      id: 1,
-      title: 'Dean\'s List',
-      organization: 'University',
-      date: '2023-2024',
-      icon: Trophy,
-      description: 'Achieved Dean\'s List recognition for academic excellence with GPA above 3.5',
-      color: 'from-yellow-500 to-orange-500'
-    },
-    {
-      id: 2,
-      title: 'Best Project Award',
-      organization: 'College Tech Fest',
-      date: '2024',
-      icon: Medal,
-      description: 'Won first place for innovative web application in college technical festival',
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      id: 3,
-      title: 'Coding Competition Winner',
-      organization: 'HackerRank',
-      date: '2023',
-      icon: Star,
-      description: 'Secured top 10 position in national level coding competition',
-      color: 'from-green-500 to-teal-500'
-    },
-    {
-      id: 4,
-      title: 'Open Source Contributor',
-      organization: 'GitHub',
-      date: '2023-Present',
-      icon: Award,
-      description: 'Active contributor to open source projects with 50+ contributions',
-      color: 'from-blue-500 to-cyan-500'
-    }
-  ];
+  // const achievements = [
+  //   {
+  //     id: 1,
+  //     title: 'Dean\'s List',
+  //     organization: 'University',
+  //     date: '2023-2024',
+  //     icon: Trophy,
+  //     description: 'Achieved Dean\'s List recognition for academic excellence with GPA above 3.5',
+  //     color: 'from-yellow-500 to-orange-500'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Best Project Award',
+  //     organization: 'College Tech Fest',
+  //     date: '2024',
+  //     icon: Medal,
+  //     description: 'Won first place for innovative web application in college technical festival',
+  //     color: 'from-purple-500 to-pink-500'
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Coding Competition Winner',
+  //     organization: 'HackerRank',
+  //     date: '2023',
+  //     icon: Star,
+  //     description: 'Secured top 10 position in national level coding competition',
+  //     color: 'from-green-500 to-teal-500'
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Open Source Contributor',
+  //     organization: 'GitHub',
+  //     date: '2023-Present',
+  //     icon: Award,
+  //     description: 'Active contributor to open source projects with 50+ contributions',
+  //     color: 'from-blue-500 to-cyan-500'
+  //   }
+  // ];
 
   return (
     <section id="certificates" className="py-20 bg-slate-900 relative overflow-hidden">
